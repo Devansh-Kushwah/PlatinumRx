@@ -32,7 +32,7 @@ export default function People() {
     <section className="from-white via-[#ead4ee] to-white py-12 hidden md:block">
       <div className="container mx-auto px-4">
         <div className="flex  gap-2 mb-8">
-          <h2 className="text-[24px] font-bold">
+          <h2 className="text:[16px] md:text-[24px] font-bold">
             Hear from Our Happy Customers
           </h2>
 

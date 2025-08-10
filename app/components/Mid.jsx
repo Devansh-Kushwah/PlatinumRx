@@ -123,7 +123,7 @@ const products = [
 export default function Mid() {
   return (
     <div className="px-[8%] py-[1.25%] bg-[#fff]">
-          <h2 className="text-[24px] font-bold mb-3">
+          <h2 className="text:[16px] md:text-[24px] font-bold mb-3">
           The PlatinumRx Advantage</h2>
       <Swiper
         spaceBetween={15}
@@ -132,7 +132,7 @@ export default function Mid() {
           0: {
             slidesPerView: 1,
           },
-          430: {
+          450: {
             slidesPerView: 1.5,
           },
           768: {

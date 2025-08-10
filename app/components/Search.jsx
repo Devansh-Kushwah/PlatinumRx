@@ -29,7 +29,8 @@ export default function SearchBar() {
           placeholder="Search for medicines"
           className="
             w-full
-            py-4
+            py-1
+            md:py-4
             pl-12
             pr-28
             rounded-full
@@ -39,7 +40,8 @@ export default function SearchBar() {
             focus:border-blue-600
             placeholder-gray-500
             transition
-            text-lg
+            text:sm
+           md:text-lg
           "
           aria-label="Search for medicines"
         />
@@ -60,6 +62,7 @@ export default function SearchBar() {
             text-lg
             font-semibold
             whitespace-nowrap
+            hidden md:block
           "
           aria-label="Submit search"
         >

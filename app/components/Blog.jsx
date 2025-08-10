@@ -16,7 +16,7 @@ const Blog = () => {
     <div className="bg-white py-10">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center gap-2 mb-6">
-          <h2 className="text-[24px] font-bold">Blog Section</h2>
+          <h2 className="md:text:[16px] md:text-[24px] font-bold">Blog Section</h2>
         </div>
 
         {/* Horizontal scroll container */}
