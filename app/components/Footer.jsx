@@ -3,7 +3,7 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
 import {FaApple } from "react-icons/fa";
 export default function Footer() {
   return (
-    <footer className="bg-pink-50 text-gray-800 border-t border-gray-200">
+    <footer className="bg-[#ffefef] text-gray-800 border-t border-gray-200">
       <div className="max-w-7xl mx-auto px-4 py-8 md:py-12">
         
         {/* Top Section */}
@@ -61,7 +61,7 @@ export default function Footer() {
             <h4 className="font-semibold mb-2">Contact Us</h4>
             <p className="text-sm">
               Our customer support team is available 7 days a week from 10:00 am - 7:00 pm.<br />
-              <a href="mailto:care@platinumrx.in" className="text-pink-600 hover:underline">
+              <a href="mailto:care@platinumrx.in" className="text-[#fc5a5a] hover:underline">
                 care@platinumrx.in
               </a><br />
               +91 96069 75756
@@ -69,7 +69,7 @@ export default function Footer() {
             <p className="mt-3 text-sm">
               <strong>Grievance Officer:</strong><br />
               Name: Abhishek Jain<br />
-              Email: <a href="mailto:care@platinumrx.in" className="text-pink-600 hover:underline">
+              Email: <a href="mailto:care@platinumrx.in" className="text-[#fc5a5a] hover:underline">
                 care@platinumrx.in
               </a>
             </p>
@@ -88,7 +88,7 @@ export default function Footer() {
           </div>
 
           {/* Social Icons */}
-          <div className="flex justify-center gap-4 text-pink-600">
+          <div className="flex justify-center gap-4 text-[#fc5a5a]">
             <a href="#"><FaYoutube size={20} /></a>
             <a href="#"><FaTwitter size={20} /></a>
             <a href="#"><FaInstagram size={20} /></a>

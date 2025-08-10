@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Head = () => {
   return (
-    <div className="bg-white w-full  py-8">
+    <div className="bg-white w-full px-[8%] py-[1.25%]">
       <div className="max-w-7xl mx-auto px-0 gap-2 flex flex-col sm:flex-row items-center justify-center gap-0">
         
         {/* First Image */}

@@ -2,8 +2,7 @@ import React from "react";
 import First from "@/app/components/First";
 import Link from "next/link";
 import { FaCartShopping } from "react-icons/fa6";
-import Search from '@/app/components/Search'
-import {Navi} from '@/app/components/Navi'
+
 export default function Nav() {
   return (
     <header className="w-full sticky top-0 z-50">
@@ -21,41 +20,28 @@ export default function Nav() {
             </Link>
           </div>
 
-          {/* Center: Links */}
-          <ul className="hidden md:flex space-x-8 text-gray-700 font-medium">
-            <li>
-              <Link
-                href="/how-to-order-medicine"
-                className="hover:text-blue-600 transition"
-              >
-                How to order medicine
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/contact-us"
-                className="hover:text-blue-600 transition"
-              >
-                Contact us
-              </Link>
-            </li>
-            <li>
-              <Link href="/login" className="hover:text-blue-600 transition">
-                Login
-              </Link>
-            </li>
-          </ul>
+          <div className="flex items-center justify-center gap-8">
 
-          {/* Right: Cart (moved inward) */}
-          <div className="flex items-center gap-4 mr-4">
-            <button className="relative bg-white p-2 rounded-full shadow hover:shadow-md transition">
-              <FaCartShopping className="text-xl text-gray-700 hover:text-blue-600" />
-            </button>
+            <Link href="/how-to-order-medicine" className="transition">
+              How to order medicine
+            </Link>
+
+            <Link href="/contact-us" className="transition">
+              Contact us
+            </Link>
+
+            <Link href="/login" className="transition">
+              Login
+            </Link>
+
+            <div className="flex items-center gap-4 mr-4">
+              <button className="relative bg-white p-2 rounded-full shadow hover:shadow-md transition">
+                <FaCartShopping className="text-xl text-[#fc5a5a]" />
+              </button>
+            </div>
           </div>
         </div>
       </nav>
- <Search/>
- <Navi/>
     </header>
   );
 }

@@ -29,8 +29,8 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(null);
 
   return (
-    <section className="bg-white py-10 px-4 border-t border-gray-200">
-      <div className="max-w-5xl mx-auto">
+    <section className="bg-white  px-[8%] py-[1.25%] border-t border-gray-200">
+      <div className="">
         
         {/* Heading */}
         <h2 className="text-xl md:text-2xl font-semibold text-gray-900 mb-6">
@@ -66,7 +66,7 @@ export default function FAQ() {
         <div className="mt-4">
           <a
             href="#"
-            className="text-pink-600 hover:underline font-medium"
+            className="text-[#fc5a5a] hover:underline font-medium"
           >
             View More
           </a>

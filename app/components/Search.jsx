@@ -11,10 +11,10 @@ export default function SearchBar() {
   };
 
   return (
-    <div className="flex justify-center p-5 w-full">
+    <div className="flex justify-center w-full px-[8%] py-[2.25%]">
       <form
         onSubmit={handleSubmit}
-        className="relative w-full max-w-6xl"
+        className="relative w-full"
         role="search"
       >
         <FaSearch

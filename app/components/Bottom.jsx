@@ -1,7 +1,7 @@
 export default function Bottom() {
   return (
-    <section className=" py-10 px-4">
-      <div className="max-w-6xl p-3 bg-gray-100  mx-auto text-gray-800 space-y-5 leading-relaxed">
+    <section className=" px-[8%] py-[1.25%]">
+      <div className=" p-3 bg-gray-100   text-gray-800 space-y-5 leading-relaxed">
 
         {/* Title */}
         <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
