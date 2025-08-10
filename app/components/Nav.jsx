@@ -6,7 +6,7 @@ import Search from '@/app/components/Search'
 import {Navi} from '@/app/components/Navi'
 export default function Nav() {
   return (
-    <header className="w-full sticky top-0 z-50">
+    <header className="w-full ">
       <First />
       <nav className="bg-[#ffebeb] shadow-md py-3 px-6 sm:px-10 flex items-center justify-center">
         {/* Flex container for three sections */}
@@ -15,7 +15,7 @@ export default function Nav() {
           <div className="flex items-center ml-4">
             <Link href="/" className="flex items-center">
               <PlatinumRxLogo />
-              <span className="font-bold text-lg sm:text-xl text-gray-800">
+              <span className="font-semibold text-lg sm:text-xl text-gray-800">
                 PlatinumRx
               </span>
             </Link>
@@ -49,12 +49,14 @@ export default function Nav() {
           {/* Right: Cart (moved inward) */}
           <div className="flex items-center gap-4 mr-4">
             <button className="relative bg-white p-2 rounded-full shadow hover:shadow-md transition">
-              <FaCartShopping className="text-xl text-gray-700 hover:text-blue-600" />
+              <FaCartShopping className="text-xl text-[#fc5a5a]  hover:text-[#fc5a5a] " />
             </button>
           </div>
         </div>
       </nav>
+      <div className="sticky top-0 z-50 bg-white shadow-md">
  <Search/>
+ </div>
  <Navi/>
     </header>
   );

@@ -1,5 +1,3 @@
-
-
 import { FaChevronDown } from "react-icons/fa";
 
 const navItems = [
@@ -8,13 +6,13 @@ const navItems = [
   "Healthcare Devices",
   "Personal Care",
   "Vitamins & Supplements",
-  "Health Resources"
+  "Health Resources",
 ];
 
 export const Navi = () => {
   return (
-    <nav className="bg-medical-light-bg border-b border-gray-400 px-28">
-      <div className="flex items-center justify-start gap-16 py-3 whitespace-nowrap min-w-max">
+    <nav className="bg-medical-light-bg border-b border-gray-200 px-4 lg:px-28 hidden lg:block">
+      <div className="flex items-center justify-start gap-6 lg:gap-16 py-3 whitespace-nowrap min-w-max">
         {navItems.map((item) => (
           <button
             key={item}

@@ -1,19 +1,17 @@
-"use client"
-import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
-import {FaApple } from "react-icons/fa";
+"use client";
+import Image from "next/image";
+import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaApple } from "react-icons/fa";
+
 export default function Footer() {
   return (
     <footer className="bg-pink-50 text-gray-800 border-t border-gray-200">
       <div className="max-w-7xl mx-auto px-4 py-8 md:py-12">
-        
+
         {/* Top Section */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          
           {/* Registered Office */}
           <div>
-            <PlatinumRxLogo
-              className="h-8 w-auto mb-4"
-            />
+            <PlatinumRxLogo className="h-8 w-auto mb-4" />
             <h2>PlatinumRx</h2>
             <h4 className="font-semibold">Registered Office Address</h4>
             <p className="mt-2 text-sm">
@@ -88,17 +86,33 @@ export default function Footer() {
           </div>
 
           {/* Social Icons */}
-          <div className="flex justify-center gap-4 text-pink-600">
+          <div className="flex justify-center gap-4 text-pink-600 mb-6">
             <a href="#"><FaYoutube size={20} /></a>
             <a href="#"><FaTwitter size={20} /></a>
             <a href="#"><FaInstagram size={20} /></a>
             <a href="#"><FaFacebookF size={20} /></a>
           </div>
+
+          {/* Footer Image aligned right */}
+<div className="w-full">
+  <Image
+    src="/footer.png"
+    alt="Footer Image"
+    width={1920}       // use a large width, but next/image will scale it down
+    height={600}       // height for aspect ratio reference
+    className="w-full h-full object-cover"
+    priority={true}    // optional, for preloading
+  />
+</div>
+
         </div>
+
       </div>
     </footer>
   );
 }
+
+// Add this dummy PlatinumRxLogo component if needed for completeness
 
 /*import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaApple } from "react-icons/fa";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
