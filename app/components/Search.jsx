@@ -14,7 +14,7 @@ export default function SearchBar() {
     <div className="flex justify-center p-5 w-full">
       <form
         onSubmit={handleSubmit}
-        className="relative w-full max-w-7xl"
+        className="relative w-full max-w-6xl"
         role="search"
       >
         <FaSearch

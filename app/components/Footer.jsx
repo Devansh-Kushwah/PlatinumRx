@@ -1,4 +1,106 @@
-import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaApple } from "react-icons/fa";
+"use client"
+import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
+import {FaApple } from "react-icons/fa";
+export default function Footer() {
+  return (
+    <footer className="bg-pink-50 text-gray-800 border-t border-gray-200">
+      <div className="max-w-7xl mx-auto px-4 py-8 md:py-12">
+        
+        {/* Top Section */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          {/* Registered Office */}
+          <div>
+            <PlatinumRxLogo
+              className="h-8 w-auto mb-4"
+            />
+            <h2>PlatinumRx</h2>
+            <h4 className="font-semibold">Registered Office Address</h4>
+            <p className="mt-2 text-sm">
+              Afolife Retail Pvt. Ltd.<br />
+              522, 24th Main Road, Parangi Palya, Sector 2 HSR Layout,<br />
+              Bengaluru, Karnataka 560102
+            </p>
+            <p className="mt-2 text-sm">
+              <strong>Drug License Number:</strong><br />
+              1 Form 20B – KA-B21-277412<br />
+              2 Form 21B – KA-B21-277414
+            </p>
+            <p className="mt-2 text-sm">
+              <strong>GSTIN:</strong> 29ABBCA7096E1ZG<br />
+              <strong>CIN:</strong> U47910KA2025PTC201566<br />
+              <strong>Phone:</strong> +91 96069 75756
+            </p>
+          </div>
+
+          {/* Links */}
+          <div className="grid grid-cols-2 gap-4 text-sm">
+            <div>
+              <h4 className="font-semibold mb-2">Know Us</h4>
+              <ul className="space-y-1">
+                <li><a href="#" className="hover:underline">About PlatinumRx</a></li>
+                <li><a href="#" className="hover:underline">How to buy Medicines</a></li>
+                <li><a href="#" className="hover:underline">All Medicines</a></li>
+                <li><a href="#" className="hover:underline">FAQs</a></li>
+                <li><a href="#" className="hover:underline">All Blogs</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-2">Policies</h4>
+              <ul className="space-y-1">
+                <li><a href="#" className="hover:underline">Terms & Conditions</a></li>
+                <li><a href="#" className="hover:underline">Privacy Policy</a></li>
+                <li><a href="#" className="hover:underline">Editorial Policy</a></li>
+                <li><a href="#" className="hover:underline">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Contact Us */}
+          <div>
+            <h4 className="font-semibold mb-2">Contact Us</h4>
+            <p className="text-sm">
+              Our customer support team is available 7 days a week from 10:00 am - 7:00 pm.<br />
+              <a href="mailto:care@platinumrx.in" className="text-pink-600 hover:underline">
+                care@platinumrx.in
+              </a><br />
+              +91 96069 75756
+            </p>
+            <p className="mt-3 text-sm">
+              <strong>Grievance Officer:</strong><br />
+              Name: Abhishek Jain<br />
+              Email: <a href="mailto:care@platinumrx.in" className="text-pink-600 hover:underline">
+                care@platinumrx.in
+              </a>
+            </p>
+          </div>
+        </div>
+
+        {/* App Download Section */}
+        <div className="mt-8 border-t border-gray-300 pt-6 text-center">
+          <h4 className="font-semibold">Download PlatinumRx App</h4>
+          <p className="text-sm mt-1 mb-4">
+            Download PlatinumRx today to save on medicines and take charge of your health — Seamlessly, Affordably, and Reliably
+          </p>
+          <div className="flex justify-center gap-4 mb-4">
+            <a href="#"><FaApple size={40} className="h-10" /></a>
+            <a href="#"><img src="/Icon.png" alt="Google Play" className="h-10" /></a>
+          </div>
+
+          {/* Social Icons */}
+          <div className="flex justify-center gap-4 text-pink-600">
+            <a href="#"><FaYoutube size={20} /></a>
+            <a href="#"><FaTwitter size={20} /></a>
+            <a href="#"><FaInstagram size={20} /></a>
+            <a href="#"><FaFacebookF size={20} /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
+
+/*import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaApple } from "react-icons/fa";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 //import platinumLogo from "@/assets/platinum-logo.png";
 //import appleIcon from "@/assets/apple-icon.png";
@@ -7,11 +109,11 @@ import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="bg-gray-50 border-t border-gray-200">
-      {/* Main Footer */}
+     
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           
-          {/* Company Info */}
+         
           <div className="space-y-4">
             <PlatinumRxLogo className="h-10" />
             <p className="text-gray-600 text-sm">
@@ -30,7 +132,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
+         
           <div>
             <h3 className="text-lg font-semibold text-gray-900 mb-4">Quick Links</h3>
             <ul className="space-y-2">
@@ -42,7 +144,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Categories */}
+         
           <div>
             <h3 className="text-lg font-semibold text-gray-900 mb-4">Categories</h3>
             <ul className="space-y-2">
@@ -54,7 +156,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact & App */}
+         
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-gray-900">Contact Us</h3>
             <div className="space-y-3">
@@ -83,7 +185,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Newsletter */}
       <div className="bg-white border-t border-gray-200">
         <div className="max-w-7xl mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
@@ -108,7 +209,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Footer */}
+     
       <div className="bg-gray-100 border-t border-gray-200">
         <div className="max-w-7xl mx-auto px-4 py-4">
           <div className="flex flex-col md:flex-row items-center justify-between text-sm text-gray-600">
@@ -126,7 +227,7 @@ const Footer = () => {
 };
 
 export default Footer;
-
+*/
 // --- Logo SVG ---
 function PlatinumRxLogo() {
   return (

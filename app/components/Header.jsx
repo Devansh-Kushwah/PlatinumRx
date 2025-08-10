@@ -1,64 +1,44 @@
-import Image from "next/image";
-
-const ctaItems = [
-  {
-    upperText: "Order Medicine On Call",
-    lowerText: "+91 96069 73756",
-    iconSrc: "/call.bbfc61f6.png",
-    alt: "Call Icon",
-  },
-  {
-    upperText: "Upload Doctor’s Prescription",
-    lowerText: "to Order",
-    iconSrc: "/upload.3fe655dd.png",
-    alt: "Upload Icon",
-  },
-  {
-    upperText: "Order Medicines Online",
-    lowerText: "Delivered to your Doorstep",
-    iconSrc: "/OrderOnCall.e865f808.png",  // Replace with actual image in public folder
-    alt: "Order Online Icon",
-  },
-];
+"use client";
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+// import "swiper/css";
 
 const Header = () => {
-  return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      {/* Banner Image */}
-      <div className="w-full relative h-[200px] sm:h-[300px] md:h-[400px]">
-        <Image
-          src="https://platinumrx.gumlet.io/assets/banner1.webp?w=828&q=75"
-          alt="Banner"
-          fill
-          style={{ objectFit: "cover" }}
-          priority
-        />
-      </div>
+  const images = [
+    "/banner1.avif",
+    "/Ki.png",
+    "/Ki.png"
+  ];
 
-      {/* CTA Section */}
-      <div className="flex flex-col sm:flex-row gap-6 mt-6 justify-start">
-        {ctaItems.map(({ upperText, lowerText, iconSrc, alt }, idx) => (
-          <div
-            key={idx}
-            className="flex items-center justify-between bg-white rounded-lg p-4 shadow-md flex-1 min-w-[280px]"
-          >
-            <div>
-              <div className="text-sm font-semibold text-gray-700">{upperText}</div>
-              <div className="text-lg font-bold text-gray-900">{lowerText}</div>
-            </div>
-            <Image
-              src={iconSrc}
-              alt={alt}
-              width={45}
-              height={44}
-              className="object-contain"
-              loading="lazy"
-              priority={false}
+  return (
+    <Swiper spaceBetween={20} slidesPerView={1} loop={true}>
+      <SwiperSlide>
+        <div className="flex gap-2 p-4 pl-20 pr-24 ml-12 mr-20  mx-auto w-full max-w-[1250px]">
+          {/* Left Image */}
+          <div className="flex-1">
+            <img
+              src={images[0]}
+              alt="Left"
+              className="w-full h-auto object-cover rounded-lg"
             />
           </div>
-        ))}
-      </div>
-    </div>
+
+          {/* Right Two Images */}
+          <div className="flex flex-col flex-1 gap-2">
+            <img
+              src={images[1]}
+              alt="Right Top"
+              className="w-full h-auto object-cover rounded-lg"
+            />
+            <img
+              src={images[2]}
+              alt="Right Bottom"
+              className="w-full h-auto object-cover rounded-lg"
+            />
+          </div>
+        </div>
+      </SwiperSlide>
+    </Swiper>
   );
 };
 
