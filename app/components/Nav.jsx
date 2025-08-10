@@ -22,15 +22,15 @@ export default function Nav() {
 
           <div className="flex items-center justify-center gap-8">
 
-            <Link href="/how-to-order-medicine" className="transition">
+            <Link href="/how-to-order-medicine" className="transition md:block hidden">
               How to order medicine
             </Link>
 
-            <Link href="/contact-us" className="transition">
+            <Link href="/contact-us" className="transition md:block hidden">
               Contact us
             </Link>
 
-            <Link href="/login" className="transition">
+            <Link href="/login" className="transition md:block hidden">
               Login
             </Link>
 

@@ -50,7 +50,7 @@ export default function First() {
   if (!isVisible) return null;
 
   return (
-    <div className="bg-[#fc5a5a] text-white py-2 px-3 relative text-sm sm:text-base">
+    <div className="bg-[#fc5a5a] text-white py-2 px-3 relative text-sm sm:text-base hidden md:block">
       <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 max-w-6xl mx-auto text-center sm:text-left flex-wrap">
         
         <span className="font-medium">Flat ₹100 OFF on First app order</span>

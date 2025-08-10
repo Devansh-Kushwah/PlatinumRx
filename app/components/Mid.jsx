@@ -126,14 +126,30 @@ export default function Mid() {
           <h2 className="text-[24px] font-bold mb-3">
           The PlatinumRx Advantage</h2>
       <Swiper
-        slidesPerView={4}
         spaceBetween={15}
-        navigation
+        navigation 
+        breakpoints={{
+          0: {
+            slidesPerView: 1,
+          },
+          430: {
+            slidesPerView: 1.5,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+          1440: {
+            slidesPerView: 4,
+          },
+        }}
         modules={[Navigation]}
         className="mySwiper"
       >
         {products.map((product, index) => (
-          <SwiperSlide key={index} className="ounded-lg ">
+          <SwiperSlide key={index} className="rounded-lg ">
             <div className="border rounded-lg shadow-sm overflow-hidden bg-white">
               <div className="bg-red-500 text-white text-sm font-semibold px-2 py-1 text-center">
                 {product.Recommended.category}
